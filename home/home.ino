@@ -90,7 +90,7 @@ void loop() {
     lcd.displayLCD(sensor.dht11, timer);
 
     // Check if it is within the time range and 20 seconds have passed since NORMAL mode
-    if ((timer.GetHour() < 5 || timer.GetHour() > 15) && millis() - startTime >= 100000) {
+    if ((timer.GetHour() < 5 || timer.GetHour() > 22) && millis() - startTime >= 100000) {
       enterDeepSleepMode();
     }
   }
