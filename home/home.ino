@@ -5,6 +5,7 @@
 #include "lightSensor.h"
 #include "MQ2.h"
 #include "emergency.h"
+#include "motor.h"
 
 #define EMERGENCY 1
 #define NORMAL 0
@@ -38,6 +39,7 @@ Sensor sensor;
 RealTime timer;
 LCD1602 lcd;
 Emgergency em_mode;
+Motor motorController;
 
 RTC_DATA_ATTR bool modeState = NORMAL;
 RTC_DATA_ATTR bool modetmp = NORMAL;
@@ -48,6 +50,7 @@ void setup() {
   timer.setupTime();
   lcd.setupLCD();
   em_mode.setupBuzzer();
+  motorController.setupMotor();
   esp_sleep_enable_timer_wakeup(sleepDuration);
 }
 
@@ -70,7 +73,7 @@ void loop() {
   }
 
   // Check MQ2 value to set mode state
-  if (sensor.gasSensor.getMQ2Value() > 200) {
+  if (sensor.gasSensor.getMQ2Value() > 400) {
     modeState = EMERGENCY;
   } else {
     modeState = NORMAL;
@@ -81,8 +84,10 @@ void loop() {
     sensor.ReadSensor();
     timer.GetTime();
     timer.PrintTime();
+    motorController.MotorOn();
     em_mode.EmergencyMode();
   } else {
+    motorController.MotorOff();
     lcdController.backlight();
     sensor.ReadSensor();
     timer.GetTime();
