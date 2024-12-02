@@ -54,6 +54,12 @@ class RealTime{
   int GetHour(){
     return hour;
   }
+  int GetMinute(){
+    return minute;
+  }
+  int GetSecond(){
+    return second;
+  }
 };
 void RealTime::setupTime(){
   wifiController.connectWifi();
@@ -83,7 +89,7 @@ void RealTime::GetTime(){
   strftime(monthName, sizeof(monthName), "%B", &timeinfo);
 }
 void RealTime::PrintTime(){
-  Serial.println("Stored Time:");
+  // Serial.println("Stored Time:");
   Serial.printf("Date: %s, %s %d, %d\n", weekDay, monthName, day, year);
   Serial.printf("Time: %02d:%02d:%02d\n", hour, minute, second);
   Serial.println();

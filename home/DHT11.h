@@ -10,8 +10,8 @@ class DHTSensor{
   friend class LCD1602;
   void setupDHT11();
   void ReadSensor();
-//  String getTemperature() const { return temp; }
-//  String getHumidity() const { return hum; }
+  String getTemperature() { return this->temp; }
+  String getHumidity() { return this->hum; }
 };
 void DHTSensor::setupDHT11(){
   DHT_pin=18;
@@ -22,6 +22,8 @@ void DHTSensor::ReadSensor(){
   TempAndHumidity data =dhtSensor.getTempAndHumidity();
   temp = String(data.temperature, 1);
   hum = String(data.humidity, 1);
+  Serial.print("temp: ");Serial.println(this->temp);
+  Serial.print("hum: ");Serial.println(this->hum);
   if (!isnan(data.temperature) && !isnan(data.humidity))
   {
     temp = String(data.temperature, 1);

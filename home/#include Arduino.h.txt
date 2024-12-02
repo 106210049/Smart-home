@@ -10,6 +10,7 @@
 #include "emergency.h"   // Emergency mode lib
 #include "motor.h"       // Motor driver lib
 
+
 #define EMERGENCY 1
 #define NORMAL 0
 
@@ -38,16 +39,21 @@ void Sensor::ReadSensor() {
   gasSensor.ReadSensor();
 }
 
+// Global objects
 Sensor sensor;
 RealTime timer;
 LCD1602 lcd;
 Emgergency em_mode;
 Motor motorController;
 
-RTC_DATA_ATTR bool modeState = NORMAL;
-RTC_DATA_ATTR bool modetmp = NORMAL;
+// JSON object for web server
+JSONVar sensorData;
 
+// WebServer setup
+AsyncWebServer server(80);
+AsyncEventSource events("/events");
 
+// HTML for web dashboard
 const char index_html[] PROGMEM = R"rawliteral(
 <!DOCTYPE HTML><html>
 <head>
@@ -55,54 +61,16 @@ const char index_html[] PROGMEM = R"rawliteral(
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:,">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      text-align: center;
-      background-color: #f7f7f7;
-    }
-    h1 {
-      background-color: #4CAF50;
-      color: white;
-      padding: 20px;
-      margin: 0;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* 2 cột */
-      grid-gap: 20px; /* Khoảng cách giữa các phần tử */
-      margin: 20px auto;
-      padding: 0 20px;
-      max-width: 600px; /* Giới hạn chiều rộng tối đa */
-    }
-    .card {
-      background-color: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      border-radius: 8px;
-      padding: 20px;
-      text-align: center;
-    }
-    .card .title {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .card .value {
-      font-size: 2rem;
-      font-weight: bold;
-    }
-    .temperature {
-      border-top: 5px solid #FF5722;
-    }
-    .humidity {
-      border-top: 5px solid #2196F3;
-    }
-    .light {
-      border-top: 5px solid #FFC107;
-    }
-    .gas {
-      border-top: 5px solid #9C27B0;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; text-align: center; background-color: #f7f7f7; }
+    h1 { background-color: #4CAF50; color: white; padding: 20px; margin: 0; }
+    .container { display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px; margin: 20px auto; padding: 0 20px; max-width: 600px; }
+    .card { background-color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 8px; padding: 20px; text-align: center; }
+    .card .title { font-size: 1.2rem; font-weight: bold; margin-bottom: 10px; }
+    .card .value { font-size: 2rem; font-weight: bold; }
+    .temperature { border-top: 5px solid #FF5722; }
+    .humidity { border-top: 5px solid #2196F3; }
+    .light { border-top: 5px solid #FFC107; }
+    .gas { border-top: 5px solid #9C27B0; }
   </style>
 </head>
 <body>
@@ -142,31 +110,33 @@ const char index_html[] PROGMEM = R"rawliteral(
 </html>
 )rawliteral";
 
-
-
-
-// JSON object to hold sensor data
-JSONVar sensorData;
-
-// Create server
-AsyncWebServer server(80);
-AsyncEventSource events("/events");
+RTC_DATA_ATTR bool modeState = NORMAL;
+RTC_DATA_ATTR bool modetmp = NORMAL;
 
 void setup() {
   Serial.begin(115200);
   sensor.setupSensor();
   timer.setupTime();
+  lcd.setupLCD();
+  em_mode.setupBuzzer();
+  motorController.setupMotor();
+  esp_sleep_enable_timer_wakeup(sleepDuration);
+  // WiFi.begin("YOUR_SSID", "YOUR_PASSWORD");
+  // while (WiFi.status() != WL_CONNECTED) {
+  //   delay(1000);
+  //   Serial.println("Connecting to WiFi...");
+  // }
+
   WiFi.mode(WIFI_STA);
   wifiController.connectWifi();
   Serial.println("Connected to WiFi");
   Serial.print("IP Address: ");
   Serial.println(WiFi.localIP());
-  lcd.setupLCD();
-  em_mode.setupBuzzer();
-  motorController.setupMotor();
-  esp_sleep_enable_timer_wakeup(sleepDuration);
+  Serial.println("Connected to WiFi");
+  Serial.print("IP Address: ");
+  Serial.println(WiFi.localIP());
 
-  // Set up web server
+  // Web server setup
   server.on("/", HTTP_GET, [](AsyncWebServerRequest* request) {
     request->send_P(200, "text/html", index_html);
   });
@@ -174,6 +144,7 @@ void setup() {
   events.onConnect([](AsyncEventSourceClient* client) {
     Serial.println("Client connected!");
   });
+
   server.addHandler(&events);
   server.begin();
 }
@@ -187,34 +158,43 @@ void enterDeepSleepMode() {
 }
 
 void loop() {
-  sensor.ReadSensor(); // Đọc tất cả cảm biến trước
-  Serial.printf("MQ2 Value: %d\n", sensor.gasSensor.getMQ2Value());
-  Serial.printf("Temperature: %s°C\n", sensor.dht11.getTemperature());
-  Serial.printf("Humidity: %s%%\n", sensor.dht11.getHumidity());
-  Serial.printf("Light Intensity: %d\n", sensor.lightsensor.GetlightIntensity());
-  timer.GetTime();
-  timer.PrintTime();
+  // Clear LCD when mode changes
+  if (modetmp != modeState) {
+    lcdController.clear();
+    modetmp = modeState;  // Update modetmp to reflect the new mode
+    if (modeState == NORMAL) {
+      startTime = millis(); // Reset start time when entering NORMAL mode
+    }
+  }
 
+  // Check MQ2 value to set mode state
   if (sensor.gasSensor.getMQ2Value() > 400) {
     modeState = EMERGENCY;
   } else {
     modeState = NORMAL;
   }
 
+  // Run different logic based on mode
   if (modeState == EMERGENCY) {
+    sensor.ReadSensor();
+    timer.GetTime();
+    timer.PrintTime();
     motorController.MotorOn();
     em_mode.EmergencyMode();
   } else {
     motorController.MotorOff();
     lcdController.backlight();
+    sensor.ReadSensor();
+    timer.GetTime();
+    timer.PrintTime();
     lcd.displayLCD(sensor.dht11, timer);
 
-    // Gửi dữ liệu lên web server
     sensorData["temperature"] = sensor.dht11.getTemperature();
     sensorData["humidity"] = sensor.dht11.getHumidity();
     sensorData["light"] = sensor.lightsensor.GetlightIntensity();
     sensorData["gas"] = sensor.gasSensor.getMQ2Value();
 
+    // Send data to web clients every 5 seconds
     static unsigned long lastTime = 0;
     unsigned long now = millis();
     if (now - lastTime > 5000) {
@@ -222,7 +202,7 @@ void loop() {
       events.send(jsonString.c_str(), "sensor_data", millis());
       lastTime = now;
     }
-
+    // Check if it is within the time range and 20 seconds have passed since NORMAL mode
     if ((timer.GetHour() < 5 || timer.GetHour() > 22) && millis() - startTime >= 100000) {
       enterDeepSleepMode();
     }

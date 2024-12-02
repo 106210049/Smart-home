@@ -5,16 +5,22 @@ class MQ2{
   public:
   void setupMQ2();
   void ReadSensor();
+
   int getMQ2Value(){
-    Serial.println(MQ2Value);
-    return MQ2Value;
+    return this->MQ2Value;
   }
 };
 void MQ2::setupMQ2(){
-  MQ2_pin=25;
+  MQ2_pin=32;
   pinMode(MQ2_pin,INPUT);
+  Serial.println("Set up gas sensor oke");
 }
 void MQ2::ReadSensor(){
-  MQ2Value=analogRead(MQ2_pin);
-  
+  static unsigned long lastReadTime = 0;
+  unsigned long now = millis();
+  if (now - lastReadTime > 500) { // Đọc mỗi 500ms
+    MQ2Value = analogRead(MQ2_pin);
+    Serial.printf("MQ2 Value: %d\n", MQ2Value);
+    lastReadTime = now;
+  }
 }
