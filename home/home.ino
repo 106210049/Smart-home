@@ -187,6 +187,8 @@ void enterDeepSleepMode() {
 }
 
 void loop() {
+
+
   sensor.ReadSensor(); // Đọc tất cả cảm biến trước
   Serial.printf("MQ2 Value: %d\n", sensor.gasSensor.getMQ2Value());
   Serial.printf("Temperature: %s°C\n", sensor.dht11.getTemperature());
@@ -195,6 +197,13 @@ void loop() {
   timer.GetTime();
   timer.PrintTime();
 
+  if (modetmp != modeState) {
+    lcdController.clear();
+    modetmp = modeState;  // Update modetmp to reflect the new mode
+    if (modeState == NORMAL) {
+      startTime = millis(); // Reset start time when entering NORMAL mode
+    }
+  }
   if (sensor.gasSensor.getMQ2Value() > 400) {
     modeState = EMERGENCY;
   } else {
