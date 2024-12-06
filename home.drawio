@@ -297,7 +297,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-44" value="&#39;#&#39;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="228" y="450" width="97" height="40" as="geometry" />
+          <mxGeometry x="231" y="450" width="97" height="40" as="geometry" />
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-46" value="Xóa mật khẩu đã nhập" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="71.5" y="450" width="99.5" height="40" as="geometry" />
@@ -308,11 +308,14 @@
         <mxCell id="a9V1Dipidt0TUTCyXqbK-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a9V1Dipidt0TUTCyXqbK-50" target="a9V1Dipidt0TUTCyXqbK-57">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="a9V1Dipidt0TUTCyXqbK-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="a9V1Dipidt0TUTCyXqbK-50" target="a9V1Dipidt0TUTCyXqbK-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-50" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&#39;*&#39;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="228" y="515" width="97" height="40" as="geometry" />
+          <mxGeometry x="231" y="515" width="97" height="40" as="geometry" />
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-52" value="False" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="281" y="490" width="60" height="15" as="geometry" />
+          <mxGeometry x="281" y="490" width="39.5" height="15" as="geometry" />
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a9V1Dipidt0TUTCyXqbK-57" target="a9V1Dipidt0TUTCyXqbK-60">
           <mxGeometry relative="1" as="geometry" />
@@ -343,6 +346,9 @@
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-70" value="True" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="310" y="450" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a9V1Dipidt0TUTCyXqbK-74" value="Thêm vào chuỗi mật khẩu và hiển thị ký tự &lt;code&gt;&#39;*&#39;&lt;/code&gt; trên LCD." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="216.5" y="640" width="126" height="45" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
