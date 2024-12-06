@@ -220,7 +220,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-15" value="Nếu có RFID ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="320" y="340" width="210" height="60" as="geometry" />
+          <mxGeometry x="320" y="340" width="210" height="40" as="geometry" />
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="a9V1Dipidt0TUTCyXqbK-18" target="a9V1Dipidt0TUTCyXqbK-20">
           <mxGeometry relative="1" as="geometry" />
@@ -339,8 +339,13 @@
         <mxCell id="a9V1Dipidt0TUTCyXqbK-63" value="True" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="11.5" y="515" width="60" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="a9V1Dipidt0TUTCyXqbK-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="a9V1Dipidt0TUTCyXqbK-64">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="131.52631578947376" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-64" value="Hiển thị thông báo lỗi (&lt;code&gt;&quot;Sai MK!&quot;&lt;/code&gt;)." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="71.5" y="610" width="120" height="35" as="geometry" />
+          <mxGeometry x="71.5" y="605" width="120" height="35" as="geometry" />
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-66" value="False" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="126.25" y="565" width="60" height="15" as="geometry" />
@@ -350,6 +355,11 @@
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-70" value="True" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="310" y="450" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a9V1Dipidt0TUTCyXqbK-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="a9V1Dipidt0TUTCyXqbK-74">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="279.50318471337596" y="660.1019481488853" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-74" value="Thêm vào chuỗi mật khẩu và hiển thị ký tự &lt;code&gt;&#39;*&#39;&lt;/code&gt; trên LCD." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="216.5" y="580" width="126" height="40" as="geometry" />
@@ -402,9 +412,9 @@
             <mxPoint x="430" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="a9V1Dipidt0TUTCyXqbK-101" value="" style="endArrow=none;html=1;rounded=0;exitX=0.577;exitY=0.026;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="a9V1Dipidt0TUTCyXqbK-60">
+        <mxCell id="a9V1Dipidt0TUTCyXqbK-101" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-40" y="650" as="sourcePoint" />
+            <mxPoint x="-40" y="680" as="sourcePoint" />
             <mxPoint x="-40" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -434,6 +444,12 @@
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-113" value="False" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="420" y="505" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a9V1Dipidt0TUTCyXqbK-119" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="660" as="sourcePoint" />
+            <mxPoint x="-40" y="659.87" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
