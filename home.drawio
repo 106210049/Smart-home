@@ -326,6 +326,9 @@
         <mxCell id="a9V1Dipidt0TUTCyXqbK-60" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;background-color: initial;&quot;&gt;Mở khóa:&lt;/strong&gt;&lt;/div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;Buzzer báo hiệu.&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;Servo di chuyển.&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;Hiển thị đếm ngược thời gian.&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;Đóng khóa lại.&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="94.5" y="635" width="210" height="90" as="geometry" />
         </mxCell>
+        <mxCell id="a9V1Dipidt0TUTCyXqbK-63" value="True" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="660" width="60" height="20" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
