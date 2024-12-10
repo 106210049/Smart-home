@@ -361,7 +361,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="d8oiAFbNmj3-CJshj4cL" name="Điều khiển tải">
-    <mxGraphModel dx="359" dy="384" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="737" dy="318" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -377,8 +377,110 @@
         <mxCell id="Xky8LruGs2_-deWcUfpZ-1" value="Cấu hình GPIO, cảm biến, Node ESP Rainmaker, kết nối ESP Rainmaker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="316.25" y="90" width="222.5" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A-OBrXVmDhHS4X8s1ycy-1" target="zSWQiep8_vQMFElPTZcj-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="A-OBrXVmDhHS4X8s1ycy-1" value="Khởi tạo Relay (Tắt)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="367.5" y="170" width="120" height="40" as="geometry" />
+          <mxGeometry x="367.5" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zSWQiep8_vQMFElPTZcj-2" target="zSWQiep8_vQMFElPTZcj-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zSWQiep8_vQMFElPTZcj-2" target="zSWQiep8_vQMFElPTZcj-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-2" value="Kiểm tra nút Reset" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="366.5" y="227.5" width="122" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zSWQiep8_vQMFElPTZcj-4" target="zSWQiep8_vQMFElPTZcj-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zSWQiep8_vQMFElPTZcj-4" target="zSWQiep8_vQMFElPTZcj-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-4" value="Giữ &amp;lt;10s" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="225" width="100" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-6" value="Reset cài đặt Wifi" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="235" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-8" value="Khôi phục cài đặt gốc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="300" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-10" value="Đ" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="217.5" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-11" value="S" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="270" width="26.25" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-12" value="Đ" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="220" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zSWQiep8_vQMFElPTZcj-13" target="zSWQiep8_vQMFElPTZcj-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zSWQiep8_vQMFElPTZcj-13" target="zSWQiep8_vQMFElPTZcj-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-13" value="Wifi kết nối ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="371.5" y="350" width="112" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zSWQiep8_vQMFElPTZcj-15" target="zSWQiep8_vQMFElPTZcj-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-15" value="Bật led Wifi" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="367.5" y="430" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-17" value="Tắt LED Wifi" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="355" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zSWQiep8_vQMFElPTZcj-19" target="zSWQiep8_vQMFElPTZcj-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-19" value="Đọc giá trị cảm biến DHT11, LDR" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325.5" y="490" width="204" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zSWQiep8_vQMFElPTZcj-21" target="zSWQiep8_vQMFElPTZcj-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-21" value="Gửi dữ liệu lên Rainmaker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="346" y="550" width="163" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-23" value="Điều khiển relay và phun sương dựa trên Rainmaker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="346" y="610" width="163" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-25" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="624.5" as="sourcePoint" />
+            <mxPoint x="720" y="625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-26" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="630" as="sourcePoint" />
+            <mxPoint x="720" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-27" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="210" as="sourcePoint" />
+            <mxPoint x="430" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-28" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="374.76" as="sourcePoint" />
+            <mxPoint x="720" y="375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-29" value="Đ" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="425" y="395" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-30" value="S" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="482.75" y="350" width="26.25" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zSWQiep8_vQMFElPTZcj-31" value="S" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="425" y="270" width="26.25" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
