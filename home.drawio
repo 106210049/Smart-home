@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3" pages="3">
   <diagram name="home" id="8qg7KSSjWDyK8bKFyOf4">
-    <mxGraphModel dx="1674" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1196" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,44 +10,44 @@
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-1" value="Begin" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="350" y="30" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="Wlit7dpWgTV-Mipl9ggA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Wlit7dpWgTV-Mipl9ggA-2" target="Wlit7dpWgTV-Mipl9ggA-4" edge="1">
+        <mxCell id="elH4rZ-bwdhjYJhse8s5-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Wlit7dpWgTV-Mipl9ggA-2" target="elH4rZ-bwdhjYJhse8s5-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-2" value="Khởi tạo cảm biến, wifi, ESP Rainmaker và các biến chương trình" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="257.5" y="110" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-4" value="Đọc giá trị cảm biến" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="340" y="200" width="120" height="60" as="geometry" />
+          <mxGeometry x="334.86" y="300" width="125.14" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Wlit7dpWgTV-Mipl9ggA-6" target="Wlit7dpWgTV-Mipl9ggA-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-6" value="Thay đổi mode&amp;nbsp;&lt;div&gt;hoạt động ?&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="325" y="280" width="150" height="80" as="geometry" />
+          <mxGeometry x="319.86" y="380" width="150" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Wlit7dpWgTV-Mipl9ggA-4" target="Wlit7dpWgTV-Mipl9ggA-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-8" value="Xóa màn hình LCD và cập nhật trạng thái" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="160" y="290" width="120" height="60" as="geometry" />
+          <mxGeometry x="154.85999999999999" y="390" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Wlit7dpWgTV-Mipl9ggA-10" target="Wlit7dpWgTV-Mipl9ggA-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-10" value="mode== NORMAL" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="150" y="397.19" width="140" height="60" as="geometry" />
+          <mxGeometry x="144.85999999999999" y="497.19" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Wlit7dpWgTV-Mipl9ggA-8" target="Wlit7dpWgTV-Mipl9ggA-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-12" value="reset biến start_time" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="10" y="397.19" width="120" height="60" as="geometry" />
+          <mxGeometry x="4.859999999999999" y="497.19" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-14" value="True" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="280" y="300" width="50" height="20" as="geometry" />
+          <mxGeometry x="274.86" y="400" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-15" value="True" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="120" y="402.82" width="50" height="20" as="geometry" />
+          <mxGeometry x="114.86" y="502.82" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Wlit7dpWgTV-Mipl9ggA-16" target="Wlit7dpWgTV-Mipl9ggA-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -56,91 +56,85 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-16" value="MQ2_value&amp;gt;50 ?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="330" y="400" width="140" height="60" as="geometry" />
+          <mxGeometry x="324.86" y="500" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Wlit7dpWgTV-Mipl9ggA-6" target="Wlit7dpWgTV-Mipl9ggA-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-19" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- LCD nhấp nháy hiển thị emergency mode&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Còi buzzer kêu liên tục&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;- Bật động cơ quạt thổi khí gas&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="510" y="402.82" width="240" height="54.37" as="geometry" />
+          <mxGeometry x="504.86" y="502.82" width="240" height="54.37" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-21" value="True" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="460" y="410" width="50" height="20" as="geometry" />
+          <mxGeometry x="454.86" y="510" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-22" value="False" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="400" y="370" width="50" height="20" as="geometry" />
+          <mxGeometry x="394.86" y="470" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-23" value="&lt;ul&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;Tắt động cơ.&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;Bật đèn nền LCD&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="329.69" y="490" width="138.12" height="50" as="geometry" />
+          <mxGeometry x="324.55" y="590" width="138.12" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-25" value="False" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="400" y="460" width="50" height="20" as="geometry" />
+          <mxGeometry x="394.86" y="560" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Wlit7dpWgTV-Mipl9ggA-26" target="Wlit7dpWgTV-Mipl9ggA-44" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-26" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Cập nhật giá trị cảm biến lên Rainmaker&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="301.25" y="570" width="197.5" height="40" as="geometry" />
+          <mxGeometry x="296.11" y="670" width="197.5" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-33" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="750" y="430" as="sourcePoint" />
-            <mxPoint x="800" y="430" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Wlit7dpWgTV-Mipl9ggA-34" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="800" y="430" as="sourcePoint" />
-            <mxPoint x="800" y="180" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Wlit7dpWgTV-Mipl9ggA-35" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="800" y="180" as="sourcePoint" />
-            <mxPoint x="400" y="180" as="targetPoint" />
+            <mxPoint x="744.86" y="530" as="sourcePoint" />
+            <mxPoint x="794.86" y="530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-37" value="" style="endArrow=none;html=1;rounded=0;exitX=0.586;exitY=-0.033;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Wlit7dpWgTV-Mipl9ggA-12" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="80" y="380" as="sourcePoint" />
-            <mxPoint x="80" y="370" as="targetPoint" />
+            <mxPoint x="74.86" y="480" as="sourcePoint" />
+            <mxPoint x="74.86" y="470" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-38" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="80" y="370" as="sourcePoint" />
-            <mxPoint x="400" y="370" as="targetPoint" />
+            <mxPoint x="74.86" y="470" as="sourcePoint" />
+            <mxPoint x="394.86" y="470" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-44" value="Hiển thị giá trị cảm biến nhiệt độ, độ ẩm không khí trên LCD" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="303.75" y="630" width="190" height="70" as="geometry" />
+          <mxGeometry x="298.61" y="730" width="190" height="70" as="geometry" />
         </mxCell>
         <mxCell id="Q66RYslAVt70fBfj7K9d-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.494;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Wlit7dpWgTV-Mipl9ggA-23" target="Wlit7dpWgTV-Mipl9ggA-26">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Q66RYslAVt70fBfj7K9d-2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="720" as="sourcePoint" />
-            <mxPoint x="400" y="700" as="targetPoint" />
+            <mxPoint x="394.86" y="820" as="sourcePoint" />
+            <mxPoint x="394.86" y="800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Q66RYslAVt70fBfj7K9d-3" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="720" as="sourcePoint" />
-            <mxPoint x="800" y="720" as="targetPoint" />
+            <mxPoint x="394.86" y="820" as="sourcePoint" />
+            <mxPoint x="794.86" y="820" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Q66RYslAVt70fBfj7K9d-4" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="800" y="720" as="sourcePoint" />
-            <mxPoint x="800" y="430" as="targetPoint" />
+            <mxPoint x="794.86" y="820" as="sourcePoint" />
+            <mxPoint x="794.86" y="530" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="elH4rZ-bwdhjYJhse8s5-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="elH4rZ-bwdhjYJhse8s5-1" target="Wlit7dpWgTV-Mipl9ggA-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="elH4rZ-bwdhjYJhse8s5-1" value="Cấu hình ESP Rainmaker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="312.5" y="200" width="170" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="ob4Y7sdsUJjuqwU2RLU9" name="Khóa cửa thông minh">
-    <mxGraphModel dx="957" dy="441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1969" dy="908" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
