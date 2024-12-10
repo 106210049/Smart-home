@@ -13,7 +13,7 @@
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Wlit7dpWgTV-Mipl9ggA-2" target="Wlit7dpWgTV-Mipl9ggA-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Wlit7dpWgTV-Mipl9ggA-2" value="Khởi tạo cảm biến, wifi, và các biến chương trình" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="Wlit7dpWgTV-Mipl9ggA-2" value="Khởi tạo cảm biến, wifi, ESP Rainmaker và các biến chương trình" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="257.5" y="110" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Wlit7dpWgTV-Mipl9ggA-4" value="Đọc giá trị cảm biến" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
