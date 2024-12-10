@@ -140,7 +140,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ob4Y7sdsUJjuqwU2RLU9" name="Khóa cửa thông minh">
-    <mxGraphModel dx="670" dy="309" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="558" dy="257" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -149,6 +149,9 @@
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-1" value="begin" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="360" y="10" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="a9V1Dipidt0TUTCyXqbK-2" target="7CZc5IjabL_Aacm05OP3-2">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-2" value="Khởi tạo hệ thống: thư viện và các GPIO của RFID, SERVO,LED,.. Khởi tạo kết nối ESP Rainmaker" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="263" y="90" width="325" height="40" as="geometry" />
@@ -247,14 +250,11 @@
             <mxPoint x="420" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7CZc5IjabL_Aacm05OP3-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-2" target="a9V1Dipidt0TUTCyXqbK-6">
+        <mxCell id="7CZc5IjabL_Aacm05OP3-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-2" target="a9V1Dipidt0TUTCyXqbK-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7CZc5IjabL_Aacm05OP3-2" value="Đưa servo quay về góc 0 độ" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="150" width="130" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="7CZc5IjabL_Aacm05OP3-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.508;entryY=-0.065;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="a9V1Dipidt0TUTCyXqbK-2" target="7CZc5IjabL_Aacm05OP3-2">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="355.5" y="150" width="140" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
