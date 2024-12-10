@@ -140,7 +140,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ob4Y7sdsUJjuqwU2RLU9" name="Khóa cửa thông minh">
-    <mxGraphModel dx="558" dy="257" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="957" dy="441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -213,8 +213,14 @@
         <mxCell id="7CZc5IjabL_Aacm05OP3-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-26" target="7CZc5IjabL_Aacm05OP3-28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-26" target="7CZc5IjabL_Aacm05OP3-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="7CZc5IjabL_Aacm05OP3-26" value="Phát hiện RFID" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="384.88" y="550" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-28" target="7CZc5IjabL_Aacm05OP3-33">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7CZc5IjabL_Aacm05OP3-28" value="Đọc UID của thẻ." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="220" y="545" width="120" height="60" as="geometry" />
@@ -229,6 +235,93 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="150" y="300" as="sourcePoint" />
             <mxPoint x="440" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-33" target="7CZc5IjabL_Aacm05OP3-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-33" target="7CZc5IjabL_Aacm05OP3-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-33" value="So sánh UID trong EEPROM" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="209.75" y="630" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-35" value="Mở khóa (Authorized Access)." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="642.5" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-37" target="7CZc5IjabL_Aacm05OP3-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-37" value="Thông báo lỗi (Access Denied)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="235" y="742.5" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-47" target="7CZc5IjabL_Aacm05OP3-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-47" value="Nhận lệnh thêm/xóa thẻ từ ESP Rainmaker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385.5" y="740" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-50" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120.2" y="720" as="sourcePoint" />
+            <mxPoint x="120.00000000000001" y="687.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-51" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="720" as="sourcePoint" />
+            <mxPoint x="440" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-52" target="7CZc5IjabL_Aacm05OP3-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-52" target="7CZc5IjabL_Aacm05OP3-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-52" value="Thêm/xóa UID" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="383.25" y="820" width="124.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-54" value="&lt;li&gt;Đọc UID thẻ và kiểm tra xem đã tồn tại chưa.&lt;/li&gt;&lt;li&gt;Nếu chưa có, lưu UID vào EEPROM và thông báo thành công.&lt;/li&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="109.75" y="810" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-56" value="&lt;li&gt;Đọc UID thẻ, xóa UID khỏi EEPROM và thông báo thành công.&lt;/li&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="324.88" y="890" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-58" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="300" as="sourcePoint" />
+            <mxPoint x="447.75" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-59" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="920" as="sourcePoint" />
+            <mxPoint x="640" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-60" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="564.88" y="919.71" as="sourcePoint" />
+            <mxPoint x="640" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-61" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="960" as="sourcePoint" />
+            <mxPoint x="240" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-62" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240.5" y="960" as="sourcePoint" />
+            <mxPoint x="640" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-63" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="960" as="sourcePoint" />
+            <mxPoint x="640" y="920" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
