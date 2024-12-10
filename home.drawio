@@ -140,7 +140,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ob4Y7sdsUJjuqwU2RLU9" name="Khóa cửa thông minh">
-    <mxGraphModel dx="957" dy="441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="558" dy="257" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -148,46 +148,88 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-1" value="begin" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="360" y="10" width="130" height="60" as="geometry" />
+          <mxGeometry x="380" y="10" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7CZc5IjabL_Aacm05OP3-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="a9V1Dipidt0TUTCyXqbK-2" target="7CZc5IjabL_Aacm05OP3-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-2" value="Khởi tạo hệ thống: thư viện và các GPIO của RFID, SERVO,LED,.. Khởi tạo kết nối ESP Rainmaker" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="263" y="90" width="325" height="40" as="geometry" />
+          <mxGeometry x="283" y="90" width="325" height="40" as="geometry" />
         </mxCell>
         <mxCell id="7CZc5IjabL_Aacm05OP3-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="a9V1Dipidt0TUTCyXqbK-6" target="7CZc5IjabL_Aacm05OP3-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="a9V1Dipidt0TUTCyXqbK-6" value="Cấu hình RainMaker" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="350.5" y="210" width="150" height="30" as="geometry" />
+          <mxGeometry x="370.5" y="210" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="7CZc5IjabL_Aacm05OP3-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-2" target="a9V1Dipidt0TUTCyXqbK-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7CZc5IjabL_Aacm05OP3-2" value="Đưa servo quay về góc 0 độ" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="348" y="150" width="154.5" height="40" as="geometry" />
+          <mxGeometry x="368" y="150" width="154.5" height="40" as="geometry" />
         </mxCell>
         <mxCell id="7CZc5IjabL_Aacm05OP3-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-8" target="7CZc5IjabL_Aacm05OP3-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7CZc5IjabL_Aacm05OP3-8" value="Đọc giá trị RFID từ EEPROM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="345.75" y="260" width="159.5" height="30" as="geometry" />
+          <mxGeometry x="365.75" y="260" width="159.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="7CZc5IjabL_Aacm05OP3-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-11" target="7CZc5IjabL_Aacm05OP3-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7CZc5IjabL_Aacm05OP3-11" value="Cập nhật giá trị pin sau mỗi 30s" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="336" y="310" width="179" height="50" as="geometry" />
+          <mxGeometry x="356" y="310" width="179" height="50" as="geometry" />
         </mxCell>
         <mxCell id="7CZc5IjabL_Aacm05OP3-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-13" target="7CZc5IjabL_Aacm05OP3-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7CZc5IjabL_Aacm05OP3-13" value="Tính toán phần trăm pin và cập nhật qua RainMaker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="329.75" y="380" width="191.5" height="50" as="geometry" />
+          <mxGeometry x="349.75" y="380" width="191.5" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="7CZc5IjabL_Aacm05OP3-16" value="Nút nhấn&amp;nbsp;&lt;div&gt;được nhấn ?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="358.25" y="450" width="134.5" height="50" as="geometry" />
+        <mxCell id="7CZc5IjabL_Aacm05OP3-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-16" target="7CZc5IjabL_Aacm05OP3-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-16" target="7CZc5IjabL_Aacm05OP3-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-16" value="Nút nhấn&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;được nhấn&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;hơn 50ms ?&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="460" width="181.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-18" target="7CZc5IjabL_Aacm05OP3-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-18" value="Cửa đang đóng ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="465" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-20" value="Mở cửa 5s rồi đóng" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="475" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-23" value="True" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="465" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-24" value="True" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310.5" y="465" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7CZc5IjabL_Aacm05OP3-26" target="7CZc5IjabL_Aacm05OP3-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-26" value="Phát hiện RFID" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="384.88" y="550" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-28" value="Đọc UID của thẻ." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="545" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-31" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="149.82999999999998" y="475" as="sourcePoint" />
+            <mxPoint x="150" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CZc5IjabL_Aacm05OP3-32" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="300" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
