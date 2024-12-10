@@ -345,6 +345,18 @@
             <mxPoint x="640" y="810" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="PDVOTt2sNQmR9RnoTWeu-7" value="True" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="840" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="PDVOTt2sNQmR9RnoTWeu-8" value="False" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="535" y="787.5" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="PDVOTt2sNQmR9RnoTWeu-9" value="Thêm" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="870" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PDVOTt2sNQmR9RnoTWeu-10" value="Xóa" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="920" width="60" height="20" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
