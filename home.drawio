@@ -361,7 +361,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="d8oiAFbNmj3-CJshj4cL" name="Điều khiển tải">
-    <mxGraphModel dx="1518" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="358" dy="155" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -446,7 +446,7 @@
         <mxCell id="zSWQiep8_vQMFElPTZcj-21" value="Gửi dữ liệu lên Rainmaker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="346" y="550" width="163" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="zSWQiep8_vQMFElPTZcj-23" value="Điều khiển relay và phun sương dựa trên lệnh Rainmaker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="zSWQiep8_vQMFElPTZcj-23" value="Chờ lệnh điều khiển relay và phun sương qua app ESP Rainmaker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="346" y="610" width="163" height="50" as="geometry" />
         </mxCell>
         <mxCell id="zSWQiep8_vQMFElPTZcj-25" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
