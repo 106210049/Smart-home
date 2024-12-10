@@ -361,7 +361,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="d8oiAFbNmj3-CJshj4cL" name="Điều khiển tải">
-    <mxGraphModel dx="358" dy="155" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1843" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -440,24 +440,17 @@
         <mxCell id="zSWQiep8_vQMFElPTZcj-19" value="Đọc giá trị cảm biến DHT11, LDR" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="325.5" y="490" width="204" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="zSWQiep8_vQMFElPTZcj-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zSWQiep8_vQMFElPTZcj-21" target="zSWQiep8_vQMFElPTZcj-23">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="zSWQiep8_vQMFElPTZcj-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zSWQiep8_vQMFElPTZcj-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="427.5" y="610" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="zSWQiep8_vQMFElPTZcj-21" value="Gửi dữ liệu lên Rainmaker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="346" y="550" width="163" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="zSWQiep8_vQMFElPTZcj-23" value="Chờ lệnh điều khiển relay và phun sương qua app ESP Rainmaker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="346" y="610" width="163" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="zSWQiep8_vQMFElPTZcj-25" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="510" y="640" as="sourcePoint" />
-            <mxPoint x="720" y="640.5" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="zSWQiep8_vQMFElPTZcj-26" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="720" y="640" as="sourcePoint" />
+            <mxPoint x="720" y="650" as="sourcePoint" />
             <mxPoint x="720" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -511,6 +504,45 @@
             <mxPoint x="40" y="320" as="sourcePoint" />
             <mxPoint x="40" y="250" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="czeT8fdwqSKZGki6HiAi-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="czeT8fdwqSKZGki6HiAi-1" target="czeT8fdwqSKZGki6HiAi-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="czeT8fdwqSKZGki6HiAi-1" value="Kiểm tra chờ lệnh điều&amp;nbsp;&lt;div&gt;khiển 1 trong 5 relay&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="342.5" y="610" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="czeT8fdwqSKZGki6HiAi-2" value="Đảo trạng thái Relay và cập nhật trạng thái trên Rainmaker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="czeT8fdwqSKZGki6HiAi-5" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="427" y="720" as="sourcePoint" />
+            <mxPoint x="427.26" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czeT8fdwqSKZGki6HiAi-6" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="czeT8fdwqSKZGki6HiAi-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="649.83" as="sourcePoint" />
+            <mxPoint x="720" y="649.83" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czeT8fdwqSKZGki6HiAi-7" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="720" as="sourcePoint" />
+            <mxPoint x="720" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czeT8fdwqSKZGki6HiAi-8" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="720" as="sourcePoint" />
+            <mxPoint x="720" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="czeT8fdwqSKZGki6HiAi-9" value="Đ" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="509" y="630" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="czeT8fdwqSKZGki6HiAi-10" value="S" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="425" y="690" width="26.25" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
